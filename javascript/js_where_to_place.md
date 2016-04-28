@@ -32,5 +32,30 @@ Date: 2016-04-18
   Example:
   
   ```
-  
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+      }
+      </script>
+    </head>
+
+    <body>
+      <h1>Javascript Head Name</h1>
+      <p id="demo">Initial Paragraph</p>
+      <button type="button" onclick="myFunction()">Press it!</button>
+    </body>
+  </html>
   ```
+
+5. JS in `<body>`
+
+When JS function is placed in `<body>` section of an HTML page. The function is invoked (called) when a button is clicked.
+
+Exmaple
+
+```
+Add in later
+```
