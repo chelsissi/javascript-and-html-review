@@ -5,8 +5,8 @@ Date: 2016-04-18
 
 -----------------------------------------------------
 
-1. JS can be placed in the `<body>` and `<head>` sections of HTML page. In HTML, JS **code** must be inserted between
-  `<script>` and `</script>` tags.
+1. JS can be placed in the `<body>` and `<head>` sections of HTML page. In HTML, 
+	JS **code** must be inserted between `<script>` and `</script>` tags.
 
   Example:
   
@@ -18,16 +18,20 @@ Date: 2016-04-18
 
 2. JS Functions and Events
 
-  * A JS **function** is a block of JavaScript code. that can be executed when "asked" for.
-  * For example, a function can be executed when an **event** occurs, like when the user clicks a button.
+  * A JS **function** is a block of JavaScript code. that can be executed when 
+	"asked" for.
+  * For example, a function can be executed when an **event** occurs, like when 
+	the user clicks a button.
 
-3. You can place any number of scripts in an HTML document, in `<body>` or `<head>`, or both.
+3. You can place any number of scripts in an HTML document, in `<body>` or 
+	`<head>`, or both.
 
   Note: ALWAYS keeping all code in one place is a good habit.
   
 4. JS in `<head>`
 
-  When put in the `<head>` section, it is invoked (called) when a button is clicked.
+  When put in the `<head>` section, it is invoked (called) when a button is 
+	clicked.
   
   Example:
   
@@ -43,8 +47,8 @@ Date: 2016-04-18
     </head>
 
     <body>
-      <h1>Javascript Head Name</h1>
-      <p id="demo">Initial Paragraph</p>
+      <h1>Javascript in Head Example</h1>
+      <p id="demo">Initiate Paragraph</p>
       <button type="button" onclick="myFunction()">Press it!</button>
     </body>
   </html>
@@ -52,10 +56,49 @@ Date: 2016-04-18
 
 5. JS in `<body>`
 
-When JS function is placed in `<body>` section of an HTML page. The function is invoked (called) when a button is clicked.
+	When JS function is placed in `<body>` section of an HTML page. The function 
+	is invoked (called) when a button is clicked.
 
-Exmaple
+	Exmaple:
 
-```
-Add in later
-```
+	```
+	<!DOCTYPE html>
+	<html>
+		<body>
+			<h1>Javascript in Body Example</h1>
+			<h2>author:CF</h2>
+			<p id="demo">A Paragraph</p>
+			<button type="button" onclick="myFunction()">Press it!</button>
+
+				<script>
+					function myFunction(){
+						document.getElementById("demo").innerHTML = "Paragraph Changed";
+					}
+				</script>
+
+		</body>
+	</html>
+	```
+
+	Note: It is a good idea to place scripts at the bottom of the `<body>` element,
+	This can improve page load, because script compilation can slow down the 
+	display.
+
+6. External JS
+
+	JS can also be put into external files.
+
+	(myscript.js)
+
+	```
+	function myFunction(){
+		document.getElementById("demo").innerHTML = "Paragraph Changed";
+	}
+	```
+
+	External
+
+
+
+
+
